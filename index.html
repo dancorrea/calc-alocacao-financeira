@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TXC42MX');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Daniel Corrêa">
+	<!-- Meta Description -->
+	<meta name="description" content="Calculadora simples de alocação de recursos financeiros">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="finanças, alocação, recursos, calculadora financeira">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Calculadora de Alocação financeira - DSCorrea</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXC42MX"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<!-- start banner Area -->
+		<section class="banner-area relative" id="home">
+			<div class="overlay overlay-bg"></div>		
+			<div class="container">
+				<div class="row fullscreen d-flex align-items-center justify-content-start">
+					<div class="banner-content col-lg-12 col-md-12">
+						<h3 class="text-white text-uppercase mb-20 pb-20">Calculadora de Alocação Financeira</h3>
+						<div class="col-lg-3 col-md-6 cols mx-auto pb-20">
+							<input type="text" id="valor" placeholder="R$ 0,00" class="form-control">
+						</div>							
+						<p class="text-white pt-20 pb-20">
+							No campo acima digite o valor recebido que você gostaria de alocar
+						</p>
+						<a href="#convert" class="primary-btn header-btn text-uppercase" onclick="calcular()">Calcular</a>
+					</div>												
+				</div>
+			</div>
+		</section>
+		<!-- End banner Area -->	
+
+		<!-- Start convert Area -->
+		<section class="convert-area" id="convert">
+			<div class="container">					
+				<div class="convert-wrap">						
+					<div class="row justify-content-center align-items-center flex-column pb-30">
+						<h1 class="text-white">Resultados</h1>
+						<p class="text-white">Sugestão de valores a serem alocados para cada finalidade.</p>
+					</div>
+					<div id="imagem" class="col-lg-12">
+						<img src="img/painel_img.jpg" class="img-fluid mx-auto d-block">
+					</div>
+					<div id="painel" style="display: none;">
+						<div class="row justify-content-center align-items-start">
+							<div class="col-lg-5 cols">
+								<p id="gastos" class="text-white mb-20"></p>
+								<p id="instrucao" class="text-white mb-20"></p>
+								<p id="diversao" class="text-white mb-20"></p>
+							</div>
+							<div class="col-lg-5 cols">
+								<p id="independencia" class="text-white mb-20"></p>
+								<p id="planos" class="text-white mb-20"></p>
+								<p id="total" class="text-white mb-20"></p>
+							</div>
+						</div>
+					</div>						
+				</div>
+			</div>	
+		</section>
+		<!-- End convert Area -->				
+
+		<!-- start footer Area -->		
+		<footer class="footer-area section-gap mt-30">
+			<div class="container">
+
+				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+					<div class="footer-text m-0">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</div>
+
+					<div>Desenvolvimento: <a href="https://www.dscorrea.com" target="_blank">DSCorrea</a></div>
+
+				</div>
+			</div>
+		</footer>	
+		<!-- End footer Area -->
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>					
+		<script src="js/main.js"></script>	
+	</body>
+</html>
