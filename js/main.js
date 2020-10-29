@@ -86,7 +86,7 @@ function calcular() {
     valor = valor.replace(',', '.');
     
     if (valor === '') {
-        alert('Você deve digitar um valor antes de calcular.');
+        alert('Digiete um valor antes de calcular.');
         return;
     }
 
@@ -103,13 +103,20 @@ function calcular() {
     var independencia_val = valor * 0.15;
     var planos_val = valor * 0.1;
     var total_val = independencia_val + planos_val;
+    var fixa_val = total_val * 0.5;
+    var fiis_val = total_val * 0.3;
+    var acoes_val = total_val * 0.2;
 
     document.getElementById('gastos').innerHTML = "Necessidades básicas: <strong>R$ " + gastos_val.toFixed(2) + "</strong>";
     document.getElementById('instrucao').innerHTML = "Instrução: <strong>R$ " + instrucao_val.toFixed(2) + "</strong>";
     document.getElementById('diversao').innerHTML = "Diversão: <strong>R$ " + diversao_val.toFixed(2) + "</strong>";
     document.getElementById('independencia').innerHTML = "Independência/Aposentadoria: <strong>R$ " + independencia_val.toFixed(2) + "</strong>";
     document.getElementById('planos').innerHTML = "Planos médio/longo prazo: <strong>R$ " + planos_val.toFixed(2) + "</strong>";
-    document.getElementById('total').innerHTML = "Total a ser poupado: <strong>R$ " + total_val.toFixed(2) + "</strong>";
+    document.getElementById('total').innerHTML = "TOTAL A SER POUPADO: <strong>R$ " + total_val.toFixed(2) + "</strong>";
+    document.getElementById('fixa').innerHTML = "Renda Fixa: <strong>R$ " + fixa_val.toFixed(2) + "</strong>";
+    document.getElementById('fiis').innerHTML = "Fundos Imobiliários: <strong>R$ " + fiis_val.toFixed(2) + "</strong>";
+    document.getElementById('acoes').innerHTML = "Ações: <strong>R$ " + acoes_val.toFixed(2) + "</strong>";
 
     document.getElementById('painel').style.display = 'block';
+    document.getElementById('convert').scrollIntoView();
 }

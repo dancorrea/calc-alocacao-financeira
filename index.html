@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 
@@ -52,7 +53,7 @@
 						<p class="text-white pt-20 pb-20">
 							No campo acima digite o valor recebido que você gostaria de alocar
 						</p>
-						<a href="#convert" class="primary-btn header-btn text-uppercase" onclick="calcular()">Calcular</a>
+						<a class="primary-btn header-btn text-uppercase" onclick="calcular()">Calcular</a>
 					</div>												
 				</div>
 			</div>
@@ -70,7 +71,9 @@
 					<div id="imagem" class="col-lg-12">
 						<img src="img/painel_img.jpg" class="img-fluid mx-auto d-block">
 					</div>
-					<div id="painel" style="display: none;">
+
+					<!-- Start Painel -->
+					<div id="painel">
 						<div class="row justify-content-center align-items-start">
 							<div class="col-lg-5 cols">
 								<p id="gastos" class="text-white mb-20"></p>
@@ -83,7 +86,32 @@
 								<p id="total" class="text-white mb-20"></p>
 							</div>
 						</div>
-					</div>						
+						<div class="row justify-content-center align-items-start">
+							<div class="col-lg-5 cols">
+								<p id="gastos" class="text-white mb-20"></p>
+								<p id="instrucao" class="text-white mb-20"></p>
+								<p id="diversao" class="text-white mb-20"></p>
+							</div>
+							<div class="col-lg-5 cols">
+								<p id="independencia" class="text-white mb-20"></p>
+								<p id="planos" class="text-white mb-20"></p>
+								<p id="total" class="text-white mb-20"></p>
+							</div>
+						</div>
+						<div class="row justify-content-center align-items-center flex-column pb-30">
+							<div class="col-lg-12 cols">
+								<h2 class="text-white mb-20 justify-content-center">Divisão</h2>
+							</div>
+						</div>
+						<div class="row justify-content-center align-items-start divisao">
+							<div class="col-lg-12 cols">
+								<p id="fixa" class="text-white mb-20"></p>
+								<p id="fiis" class="text-white mb-20"></p>
+								<p id="acoes" class="text-white mb-20"></p>
+							</div>
+						</div>
+					</div>
+					<!-- End Painel -->					
 				</div>
 			</div>	
 		</section>
